@@ -9,7 +9,7 @@ export function Marquee() {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-8%"]);
   const line = Array.from({ length: 8 }, () => WORDS.join("  /  ")).join("  /  ");
 
   return (

@@ -201,7 +201,7 @@
 }
 
 @utility marquee-track {
-  animation: yuu-marquee 40s linear infinite;
+  animation: yuu-marquee 120s linear infinite;
 }
 @keyframes yuu-marquee {
   from { transform: translate3d(0,0,0); }
