@@ -5,6 +5,9 @@ import tailwindcss from "@tailwindcss/vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 
 export default defineConfig({
+  build: {
+    chunkSizeWarningLimit: 950,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
