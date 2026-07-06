@@ -25,6 +25,21 @@ const explorations = [
   },
 ];
 
+const boardNotes = [
+  {
+    label: "Input",
+    value: "Loose sketches, timing tests, type systems, spatial references.",
+  },
+  {
+    label: "Rule",
+    value: "No experiment ships unless it improves clarity or atmosphere.",
+  },
+  {
+    label: "Output",
+    value: "Reusable motion language, visual grammar, and production-ready ideas.",
+  },
+];
+
 export function Explorations() {
   return (
     <section id="explorations" className="relative z-10 border-t border-white/5 px-6 py-28 lg:px-12 lg:py-36">
@@ -45,24 +60,23 @@ export function Explorations() {
                 <span>Live studies</span>
               </div>
               <div className="space-y-5">
-                {explorations.map((item, index) => (
-                  <a
-                    key={item.code}
-                    href={`#exploration-${item.code.toLowerCase().replace(".", "-")}`}
-                    className="group grid grid-cols-[3.5rem_1fr] gap-4 border-t border-white/10 pt-5"
+                {boardNotes.map((note, index) => (
+                  <div
+                    key={note.label}
+                    className="grid grid-cols-[3.5rem_1fr] gap-4 border-t border-white/10 pt-5"
                   >
-                    <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-ink/35 transition-colors group-hover:text-accent">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-ink/35">
                       0{index + 1}
                     </span>
                     <span>
-                      <span className="block font-display text-xl tracking-tight text-ink/80 transition-colors group-hover:text-accent">
-                        {item.title}
+                      <span className="block font-mono text-[10px] uppercase tracking-[0.28em] text-accent/70">
+                        {note.label}
                       </span>
-                      <span className="mt-2 block text-xs leading-5 text-ink/40">
-                        {item.desc.split(".")[0]}.
+                      <span className="mt-3 block max-w-[34ch] text-sm leading-6 text-ink/55">
+                        {note.value}
                       </span>
                     </span>
-                  </a>
+                  </div>
                 ))}
               </div>
               <div className="mt-10 grid grid-cols-3 gap-px bg-white/10">
