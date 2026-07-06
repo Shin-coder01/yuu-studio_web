@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title">
+  <title id="title">Kinetic identity study</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090909"/>
+      <stop offset="0.52" stop-color="#181818"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="38%" r="55%">
+      <stop offset="0" stop-color="#f1f1f1" stop-opacity="0.32"/>
+      <stop offset="0.55" stop-color="#a7a7a7" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.78" numOctaves="3" seed="11"/>
+      <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .18 0"/>
+    </filter>
+  </defs>
+  <rect width="900" height="620" fill="url(#bg)"/>
+  <rect width="900" height="620" fill="url(#light)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M195 438c94-145 217-206 369-185 66 9 120 35 162 76" stroke="#efefef" stroke-width="22" opacity=".72"/>
+    <path d="M170 376c126-119 254-154 384-105 83 31 141 86 173 164" stroke="#d6d6d6" stroke-width="5" opacity=".45"/>
+    <path d="M220 176h460M250 214h400M288 252h326" stroke="#fff" stroke-width="2" opacity=".18"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="17" letter-spacing="7" fill="#f2f2f2" opacity=".58">
+    <text x="70" y="88">YUU / MOTION TEST 01</text>
+    <text x="70" y="548">IDENTITY IN MOTION</text>
+  </g>
+  <rect x="46" y="44" width="808" height="532" fill="none" stroke="#fff" stroke-opacity=".14"/>
+  <rect width="900" height="620" filter="url(#grain)" opacity=".42"/>
+</svg>
