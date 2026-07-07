@@ -15,7 +15,7 @@ export function Contact() {
     const subject = encodeURIComponent(`Project inquiry from ${name || "Yuu Studios site"}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nProject:\n${project}`);
     setSent(true);
-    window.location.href = `mailto:hello@yuu.studio?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:yuustudio.in@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -36,7 +36,7 @@ export function Contact() {
           className="relative"
         >
           <FinalFrameCorners />
-          <a href="mailto:hello@yuu.studio" className="group block px-4 py-8 sm:px-8 lg:px-10">
+          <a href="mailto:yuustudio.in@gmail.com" className="group block px-4 py-8 sm:px-8 lg:px-10">
             <h2 className="font-display text-[13vw] font-medium leading-[0.88] tracking-tighter text-balance transition-colors duration-500 group-hover:text-accent sm:text-[11vw] lg:text-[9vw]">
               <RevealWord text="Let's build" />
               <br />
@@ -89,9 +89,9 @@ export function Contact() {
           </div>
 
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:col-span-6 lg:pl-12">
-            <ContactBlock label="Email" value="hello@yuu.studio" href="mailto:hello@yuu.studio" />
-            <ContactBlock label="Phone" value="+49 30 555 0142" href="tel:+493055501420" />
-            <ContactBlock label="Studio" value={`Kottbusser Damm 72\n10967 Berlin, DE`} />
+            <ContactBlock label="Email" value="yuustudio.in@gmail.com" href="mailto:yuustudio.in@gmail.com" />
+            <ContactBlock label="WhatsApp" value="+91 9597673411" href="https://wa.me/919597673411" />
+            <ContactBlock label="Location" value="Chennai, Tamil Nadu" />
             <div>
               <span className="mb-3 block font-mono text-[10px] uppercase tracking-[0.3em] text-ink/40">
                 Links
@@ -101,7 +101,7 @@ export function Contact() {
                   { label: "Selected work", href: "#work" },
                   { label: "Services", href: "#services" },
                   { label: "Studio", href: "#studio" },
-                  { label: "Email", href: "mailto:hello@yuu.studio" },
+                  { label: "Email", href: "mailto:yuustudio.in@gmail.com" },
                 ].map((link) => (
                   <li key={link.label}>
                     <a

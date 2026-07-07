@@ -9,7 +9,7 @@ const cols = [
       { label: "Studio", href: "#studio" },
       { label: "Method", href: "#method" },
       { label: "Contact", href: "#contact" },
-      { label: "Email", href: "mailto:hello@yuu.studio" },
+      { label: "Email", href: "mailto:yuustudio.in@gmail.com" },
     ],
   },
   {
@@ -25,8 +25,8 @@ const cols = [
     title: "Direct",
     links: [
       { label: "Start a project", href: "#contact" },
-      { label: "hello@yuu.studio", href: "mailto:hello@yuu.studio" },
-      { label: "+49 30 555 0142", href: "tel:+493055501420" },
+      { label: "yuustudio.in@gmail.com", href: "mailto:yuustudio.in@gmail.com" },
+      { label: "+91 9597673411", href: "https://wa.me/919597673411" },
       { label: "Back to top", href: "#top" },
     ],
   },
@@ -51,7 +51,7 @@ export function Footer() {
               YUU<span className="text-accent">.</span>
             </span>
             <p className="mt-4 max-w-[24ch] text-sm text-ink/50">
-              A design, branding and development studio. Berlin / Tokyo.
+              A design, branding and development studio. Chennai, Tamil Nadu.
             </p>
           </div>
           {cols.map((c) => (
@@ -87,8 +87,8 @@ export function Footer() {
         <div className="flex flex-col-reverse items-start justify-between gap-4 border-t border-white/5 pt-8 font-mono text-[10px] uppercase tracking-widest text-ink/30 sm:flex-row sm:items-center">
           <span>(c) {new Date().getFullYear()} Yuu Studios / Precision built</span>
           <div className="flex gap-6">
-            <a href="mailto:hello@yuu.studio?subject=Privacy" className="hover:text-ink">Privacy</a>
-            <a href="mailto:hello@yuu.studio?subject=Imprint" className="hover:text-ink">Imprint</a>
+            <a href="mailto:yuustudio.in@gmail.com?subject=Privacy" className="hover:text-ink">Privacy</a>
+            <a href="mailto:yuustudio.in@gmail.com?subject=Imprint" className="hover:text-ink">Imprint</a>
             <a href="#top" className="hover:text-ink">Back to top</a>
           </div>
         </div>
@@ -117,11 +117,11 @@ function FooterCTA() {
 
       <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div className="grid gap-1">
-          <a href="mailto:hello@yuu.studio" className="font-display text-xl text-ink hover:text-accent">
-            hello@yuu.studio
+          <a href="mailto:yuustudio.in@gmail.com" className="font-display text-xl text-ink hover:text-accent">
+            yuustudio.in@gmail.com
           </a>
-          <a href="tel:+493055501420" className="font-mono text-xs uppercase tracking-widest text-ink/50 hover:text-ink">
-            +49 30 555 0142
+          <a href="https://wa.me/919597673411" className="font-mono text-xs uppercase tracking-widest text-ink/50 hover:text-ink">
+            WhatsApp +91 9597673411
           </a>
         </div>
 
